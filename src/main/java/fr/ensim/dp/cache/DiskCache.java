@@ -30,6 +30,8 @@ public class DiskCache implements ICache {
         dir.mkdir();
     }
 
+    private DiskCache() {}
+
     @Override
     public long size() {
         return FileUtil.dirLength(dir);
